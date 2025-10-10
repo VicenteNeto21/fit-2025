@@ -1,0 +1,100 @@
+[
+  {
+    "nome": "Credeciamento",
+    "horario": "07:30 - 21:30",
+    "local": "Hall de Entrada da Universidade",
+    "palestrante": "Equipe de Recepção",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Recepção dos participantes, entrega de crachás e encaminhamento para as atividades do dia."
+  },
+  {
+    "nome": "Abertura Oficial",
+    "horario": "08:30 - 09:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Comissão Organizadora",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Cerimônia de abertura do FIT 2025 com apresentação do evento, autoridades e boas-vindas aos participantes."
+  },
+  {
+    "nome": "Enigma FIT 2025",
+    "horario": "10:30 - 11:30",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Equipe de Enigma",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "O enigma FIT 2025 é uma atividade interativa onde os participantes resolvem desafios tecnológicos para ganhar prêmios."
+  },
+  {
+    "nome": "Arena FIT Games",
+    "horario": "11:30 - 13:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Equipe de Jogos",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/jogos.png",
+    "foto_evento": "assets/img/schedule/jogos.png",
+    "descricao": "Competições de jogos eletrônicos e atividades lúdicas para promover a integração e diversão entre os participantes."
+  },
+  {
+    "nome": "Campeonato de Karaokê - FIT 2025",
+    "horario": "11:30 - 13:00",
+    "local": "Auditório Principal",
+    "palestrante": "Kaleb/Fernanda/Gabriela",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Mostre seu talento no palco do FIT 2025! Participe do nosso campeonato de karaokê e concorra a prêmios incríveis."
+  },
+
+
+
+
+
+
+
+
+  {
+    "nome": "Credeciamento",
+    "horario": "07:30 - 21:30",
+    "local": "Hall de Entrada da Universidade",
+    "palestrante": "Equipe de Recepção",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Recepção dos participantes, entrega de crachás e encaminhamento para as atividades do dia."
+  },
+  {
+    "nome": "Arena FIT Games",
+    "horario": "11:30 - 13:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Equipe de Jogos",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/jogos.png",
+    "foto_evento": "assets/img/schedule/jogos.png",
+    "descricao": "Competições de jogos eletrônicos e atividades lúdicas para promover a integração e diversão entre os participantes."
+  },
+  {
+    "nome": "Campeonato de Karaokê - FIT 2025",
+    "horario": "11:30 - 13:00",
+    "local": "Auditório",
+    "palestrante": "Kaleb/Fernanda/Gabriela",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Mostre seu talento no palco do FIT 2025! Participe do nosso campeonato de karaokê e concorra a prêmios incríveis."
+  },
+  {
+    "nome": "IA e Visão Computacional na Agricultura: Revolução Tecnológica do Algoritmo ao Campo",
+    "horario": "13:00 - 15:00",
+    "local": "Auditório",
+    "palestrante": "Diego Emmanuel",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Partindo de uma breve linha do tempo das revoluções industriais, da mecanização à automação inteligente, a palestra objetiva contextualizar a chegada da Agricultura 4.0 e a busca pela Agricultura 5.0. Movida pela IA, essa transição marca a entrada da agricultura na era da tomada de decisão baseada em algoritmos, onde máquinas passam a enxergar, aprender e agir com base em informações visuais e ambientais."
+  }
+]

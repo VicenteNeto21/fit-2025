@@ -1,0 +1,20 @@
+{
+    "nome": "Hackathon 2025: Palestra de Introdução sobre o desafio",
+    "horario": "19:30 - 20:00",
+    "local": "Auditório",
+    "palestrante": "Gisele/Larissa/Livia/Prof. Welligton",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Introdução ao Hackathon 2025, explicando o desafio, regras e trazendo um pouco das expectativas para os participantes."
+  },
+  {
+    "nome": "Hackathon 2025: Inicio das atividades",
+    "horario": "20:00 - 23:59",
+    "local": "Salas 01, 03, 04, 05, 06, 07, Mandacaru e sala de estudos",
+    "palestrante": "Gisele/Larissa/Livia/Prof. Welligton",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Início das atividades do Hackathon 2025, onde os participantes começam a trabalhar em suas soluções para o desafio proposto."
+  },

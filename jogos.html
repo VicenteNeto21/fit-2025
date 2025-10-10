@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogos & Competições — FIT 2025</title>
+  <link rel="icon" href="assets/img/fit-icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/manifest.json">
+  <meta name="theme-color" content="#00AFEF">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#181f2a] via-[#232946] to-[#0f172a] min-h-screen text-gray-100">
+  <!-- Navbar -->
+  <header class="fixed w-full bg-[#181f2a]/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/img/fit-icon.svg" alt="FIT 2025" class="h-9">
+        <span class="text-xl font-extrabold text-[#00AFEF] tracking-widest">FIT 2025</span>
+      </a>
+      <nav class="hidden md:flex gap-8 text-base font-semibold">
+        <a href="index.html#inicio" class="hover:text-[#00AFEF] transition">Início</a>
+        <a href="index.html#programacao" class="hover:text-[#00AFEF] transition">Programação</a>
+        <a href="index.html#patrocinadores" class="hover:text-[#00AFEF] transition">Patrocinadores</a>
+        <a href="index.html#evento" class="hover:text-[#00AFEF] transition">O Evento</a>
+        <a href="index.html#organizadores" class="hover:text-[#00AFEF] transition">Organizadores</a>
+        <a href="jogos.html" class="text-[#A900FF] font-bold underline underline-offset-4">Jogos</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-gray-100">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#181f2a] px-4 pb-4">
+      <nav class="flex flex-col gap-3 text-base font-semibold">
+        <a href="index.html#inicio" class="hover:text-[#00AFEF] transition">Início</a>
+        <a href="index.html#programacao" class="hover:text-[#00AFEF] transition">Programação</a>
+        <a href="index.html#patrocinadores" class="hover:text-[#00AFEF] transition">Patrocinadores</a>
+        <a href="index.html#evento" class="hover:text-[#00AFEF] transition">O Evento</a>
+        <a href="index.html#organizadores" class="hover:text-[#00AFEF] transition">Organizadores</a>
+        <a href="jogos.html" class="text-[#A900FF] font-bold underline underline-offset-4">Jogos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 pb-16">
+    <section class="max-w-5xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#00AFEF] via-[#A900FF] to-[#00AFEF] drop-shadow-lg">
+        Jogos & Competições
+      </h1>
+      <p class="text-center text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+        Entre na arena gamer do FIT 2025! Competições, diversão, transmissão ao vivo e prêmios para os melhores jogadores. Monte sua equipe e venha fazer história!
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-14">
+        <!-- Campeonatos Oficiais -->
+        <div class="bg-[#232946] rounded-2xl shadow-lg p-6 flex flex-col gap-6 border border-[#00AFEF]/30">
+          <h2 class="text-2xl font-bold text-[#00AFEF] flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-trophy text-[#FFA800]"></i> Campeonatos Oficiais
+          </h2>
+          <div class="flex items-center gap-4 bg-[#181f2a] rounded-lg p-4">
+            <img src="assets/img/games/lol.png" alt="League of Legends" class="w-14 h-14 object-contain rounded">
+            <div>
+              <span class="font-bold text-lg text-[#00AFEF] flex items-center gap-2">
+                <i class="fa-brands fa-fort-awesome"></i> League of Legends
+              </span>
+              <p class="text-gray-300 text-sm">Monte sua equipe e dispute o título do maior campeonato de LoL do Sertão!</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-[#181f2a] rounded-lg p-4">
+            <img src="assets/img/games/cs2.png" alt="Counter-Strike 2" class="w-14 h-14 object-contain rounded">
+            <div>
+              <span class="font-bold text-lg text-[#00AFEF] flex items-center gap-2">
+                <i class="fa-solid fa-gun"></i> Counter-Strike 2
+              </span>
+              <p class="text-gray-300 text-sm">Mostre sua mira e estratégia no campeonato de CS2 do FIT 2025!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Arena FIT Games -->
+        <div class="bg-[#232946] rounded-2xl shadow-lg p-6 flex flex-col gap-6 border border-[#A900FF]/30">
+          <h2 class="text-2xl font-bold text-[#A900FF] flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-bolt text-[#A900FF]"></i> Arena FIT Games
+          </h2>
+          <div class="flex items-center gap-4 bg-[#181f2a] rounded-lg p-4">
+            <i class="fa-solid fa-futbol text-3xl text-[#A900FF]"></i>
+            <div>
+              <span class="font-bold text-lg text-[#A900FF]">Bomba Patch</span>
+              <p class="text-gray-300 text-sm flex items-center gap-2">
+                <i class="fa-solid fa-calendar-day"></i> 1º dia do FIT
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-[#181f2a] rounded-lg p-4">
+            <i class="fa-solid fa-guitar text-3xl text-[#A900FF]"></i>
+            <div>
+              <span class="font-bold text-lg text-[#A900FF]">Clone Hero</span>
+              <p class="text-gray-300 text-sm flex items-center gap-2">
+                <i class="fa-solid fa-calendar-day"></i> 2º dia do FIT
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-[#181f2a] rounded-lg p-4">
+            <i class="fa-solid fa-dragon text-3xl text-[#A900FF]"></i>
+            <div>
+              <span class="font-bold text-lg text-[#A900FF]">Mortal Kombat 11</span>
+              <p class="text-gray-300 text-sm flex items-center gap-2">
+                <i class="fa-solid fa-calendar-day"></i> 2º dia do FIT
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transmissão ao vivo -->
+      <div class="bg-[#232946] rounded-2xl shadow-lg p-6 mb-12 border border-[#00AFEF]/30">
+        <h2 class="text-2xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#00AFEF] via-[#A900FF] to-[#00AFEF] flex items-center justify-center gap-2">
+          <i class="fa-solid fa-tv"></i> Transmissão Ao Vivo
+        </h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+          <div class="flex-1 w-full">
+            <h3 class="text-lg font-semibold text-[#FF0000] mb-2 flex items-center gap-2">
+              <i class="fab fa-youtube"></i> YouTube
+            </h3>
+            <div class="aspect-video rounded-lg overflow-hidden border-2 border-[#FF0000]">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Transmissão FIT 2025 no YouTube" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+          </div>
+          <div class="flex-1 w-full">
+            <h3 class="text-lg font-semibold text-[#9147FF] mb-2 flex items-center gap-2">
+              <i class="fab fa-twitch"></i> Twitch
+            </h3>
+            <div class="aspect-video rounded-lg overflow-hidden border-2 border-[#9147FF]">
+              <iframe src="https://player.twitch.tv/?channel=SEU_CANAL_TWITCH&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="315" width="100%" class="w-full h-full"></iframe>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-gray-300 mt-4 text-sm">
+          Acompanhe as partidas ao vivo e torça pelo seu time favorito!
+        </p>
+      </div>
+
+      <!-- Chamada final -->
+      <div class="text-center mt-8">
+        <p class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00AFEF] via-[#A900FF] to-[#00AFEF] drop-shadow-lg">
+          Forme sua equipe, prepare-se para competir e venha disputar esses campeonatos que prometem fazer história no FIT 2025!
+        </p>
+        <div class="mt-4">
+          <a href="#" class="inline-flex items-center gap-2 bg-[#00AFEF] hover:bg-[#A900FF] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-all text-lg">
+            <i class="fa-solid fa-link"></i> Consulte o regulamento e inscrições
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#181f2a] text-gray-300 py-12 border-t border-[#232946] mt-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-[#00AFEF]">Sobre o FIT</h3>
+          <p class="mb-4">
+            O Fórum de Inovação e Tecnologia (FIT) é o maior evento universitário de tecnologia do Sertão de Crateús, promovendo a inovação e o empreendedorismo.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/fitcrateus/" class="hover:text-[#00AFEF] transition-colors" aria-label="Instagram do FIT Crateús">
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="hover:text-[#A900FF] transition-colors" aria-label="YouTube do FIT Crateús">
+              <i class="fab fa-youtube text-2xl"></i>
+            </a>
+            <a href="#" class="hover:text-[#9147FF] transition-colors" aria-label="Twitch do FIT Crateús">
+              <i class="fab fa-twitch text-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-[#00AFEF]">Contato</h3>
+          <div class="space-y-2">
+            <p class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3"></i>
+              Av. Professora Machadinha Lima, S/N, Crateús-CE
+            </p>
+            <p class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              (88) 3691-9700
+            </p>
+            <p class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              fit@crateus.ufc.br
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[#232946] text-center text-gray-500">
+        <p>© 2025 | Núcleo de Comunicação do FIT</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
