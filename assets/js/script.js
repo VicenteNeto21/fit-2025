@@ -1,6 +1,6 @@
 // =======================
 // Mobile Menu Toggle com animação suave
-// =======================
+// =====================
 const menuBtn = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -29,7 +29,7 @@ if (menuBtn && mobileMenu) {
 
 // =======================
 // Scroll suave para links internos
-// =======================
+// =====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -45,7 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // =======================
 // Schedule Day Tabs
-// =======================
+// =====================
 const scheduleDays = document.querySelectorAll('.schedule-day');
 const scheduleContents = document.querySelectorAll('.schedule-day-content');
 
@@ -61,9 +61,9 @@ scheduleDays.forEach(day => {
 
 // =======================
 // Countdown Timer
-// =======================
+// =====================
 function updateCountdown() {
-  const eventDate = new Date('2025-10-21T09:00:00').getTime();
+  const eventDate = new Date('2025-10-21T08:00:00').getTime();
   const now = new Date().getTime();
   const timeLeft = eventDate - now;
 
@@ -71,11 +71,21 @@ function updateCountdown() {
   const hoursEl = document.getElementById('hours');
   const minutesEl = document.getElementById('minutes');
   const secondsEl = document.getElementById('seconds');
+  const countdownContainer = document.getElementById('countdown-container'); // <-- adicione um id no container se quiser animar ou substituir tudo
 
   if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
 
   if (timeLeft <= 0) {
-    daysEl.textContent = hoursEl.textContent = minutesEl.textContent = secondsEl.textContent = '00';
+    // Mostra mensagem de boas-vindas
+    if (countdownContainer) {
+      countdownContainer.innerHTML = `
+        <h2 class="text-2xl md:text-3xl font-bold text-[#00AFEF] text-center animate-pulse">
+          Seja bem-vindo ao maior evento universitário!
+        </h2>
+      `;
+    } else {
+      daysEl.textContent = hoursEl.textContent = minutesEl.textContent = secondsEl.textContent = '00';
+    }
     return;
   }
 
@@ -95,7 +105,7 @@ setInterval(updateCountdown, 1000);
 
 // =======================
 // Fade-in animation on scroll
-// =======================
+// =====================
 const fadeElements = document.querySelectorAll('.fade-in');
 
 const fadeInOnScroll = () => {
@@ -113,7 +123,7 @@ window.addEventListener('scroll', fadeInOnScroll);
 
 // =======================
 // Header scroll effect
-// =======================
+// =====================
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
   if (window.scrollY > 100) {
@@ -125,7 +135,7 @@ window.addEventListener('scroll', () => {
 
 // =======================
 // Carregar e renderizar a programação
-// =======================
+// =====================
 async function loadSchedule() {
   const scheduleContent = document.getElementById('schedule-content');
   const scheduleDays = document.querySelectorAll('.schedule-day');
@@ -170,40 +180,111 @@ async function loadSchedule() {
         const fimNum = hFim + (mFim||0)/60;
         if (horaAtual >= iniNum && horaAtual < fimNum) {
           acontecendoAgora = `
-        <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#00AFEF]/90 text-white text-xs font-bold animate-pulse shadow">
-          <i class="fas fa-bolt"></i> Acontecendo agora
-        </span>
-      `;
-          destaque = 'border-2 border-[#00AFEF] shadow-lg shadow-[#00AFEF]/20';
+          <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#00AFEF]/90 text-white text-xs font-bold animate-pulse shadow">
+            <i class="fas fa-bolt"></i> Acontecendo agora
+          </span>
+        `;
+          destaque = 'ring-2 ring-[#00AFEF]/20';
         }
       }
 
-      // Usa a foto do palestrante se existir, senão mostra ícone padrão (quadrado e ainda maior)
-      const fotoPalestrante = ev.foto_palestrante
-        ? `<img src="${ev.foto_palestrante}" alt="Foto de ${ev.palestrante}" class="w-32 h-32 object-cover border-2 border-[#00AFEF] shadow-sm rounded-lg">`
-        : `<span class="w-32 h-32 flex items-center justify-center rounded-lg bg-gray-200 border-2 border-[#00AFEF] text-[#00AFEF]">
-         <i class="fas fa-user text-4xl"></i>
-       </span>`;
+      // Detecta cartões especiais por nome (case-insensitive)
+      const name = (ev.nome || '').toLowerCase();
+      const speaker = (ev.palestrante || '').toLowerCase();
 
+      const isStartUFC = (name === 'amostra de startups') || /startufc/i.test(speaker) || /start day/i.test(name);
+      const isCosmos = /cosmos/i.test(name) || /cosmos/i.test(speaker) || /coffee break/i.test(name) || /coffe break/i.test(name);
+      const isGatech = /gatech/i.test(name) || /momento gatech/i.test(name);
+
+      // Estilos padrão do card
+      let cardOuter = 'relative bg-white border-l-4 border-[#00AFEF] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden';
+      let horarioBadge = 'inline-flex items-center gap-2 bg-[#00AFEF]/10 text-[#00AFEF] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide';
+      let localBadge = 'inline-flex items-center gap-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full uppercase tracking-wide';
+      let titleClass = 'text-lg md:text-xl font-bold text-gray-900 mb-1';
+      let descricaoClass = 'text-gray-700 mb-2 text-sm md:text-base leading-relaxed';
+      let palestranteClass = 'flex items-center gap-2 mt-2 text-gray-800 text-xs md:text-sm font-semibold';
+
+      // StartUFC (Amostra de Startups) — cartão todo nas cores deles (mantém padrão)
+      if (isStartUFC) {
+        cardOuter = 'relative rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border-l-4 border-[#38D430] bg-[#002A3A]';
+        horarioBadge = 'inline-flex items-center gap-2 bg-[#38D430]/12 text-[#38D430] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide';
+        localBadge = 'inline-flex items-center gap-2 bg-white/8 text-[#cbd5d9] text-xs px-3 py-1 rounded-full uppercase tracking-wide';
+        titleClass = 'text-lg md:text-xl font-extrabold text-white mb-1';
+        descricaoClass = 'text-[#cbd5d9] mb-2 text-sm md:text-base leading-relaxed';
+        palestranteClass = 'flex items-center gap-2 mt-2 text-[#38D430] text-sm font-semibold';
+        if (acontecendoAgora) {
+          acontecendoAgora = `
+            <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#38D430]/90 text-[#002A3A] text-xs font-bold animate-pulse shadow">
+              <i class="fas fa-bolt"></i> Acontecendo agora
+            </span>
+          `;
+        }
+      }
+      // Cosmos Supermercados / CoffeeBreak — aplicar MESMO PADRÃO do StartUFC, mas com cores Cosmos
+      else if (isCosmos) {
+        // Cores Cosmos: borda #CD1129 (accent), fundo #011343 (primária), texto secundário claro
+        cardOuter = 'relative rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border-l-4 border-[#CD1129] bg-[#011343]';
+        horarioBadge = 'inline-flex items-center gap-2 bg-[#CD1129]/12 text-[#CD1129] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide';
+        localBadge = 'inline-flex items-center gap-2 bg-white/8 text-[#cbd5d9] text-xs px-3 py-1 rounded-full uppercase tracking-wide';
+        titleClass = 'text-lg md:text-xl font-extrabold text-white mb-1';
+        descricaoClass = 'text-[#cbd5d9] mb-2 text-sm md:text-base leading-relaxed';
+        palestranteClass = 'flex items-center gap-2 mt-2 text-[#CD1129] text-sm font-semibold';
+        if (acontecendoAgora) {
+          acontecendoAgora = `
+            <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#CD1129]/90 text-[#011343] text-xs font-bold animate-pulse shadow">
+              <i class="fas fa-bolt"></i> Acontecendo agora
+            </span>
+          `;
+        }
+      }
+      // Momento Gatech — aplicar MESMO PADRÃO do StartUFC, com cores Gatech
+      else if (isGatech) {
+        // Cores Gatech: destaque #F2BF56 (dourado), fundo #01435E (teal escuro), acento #D089AA
+        cardOuter = 'relative rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border-l-4 border-[#F2BF56] bg-[#01435E]';
+        horarioBadge = 'inline-flex items-center gap-2 bg-[#F2BF56]/12 text-[#F2BF56] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide';
+        localBadge = 'inline-flex items-center gap-2 bg-white/8 text-[#cbd5d9] text-xs px-3 py-1 rounded-full uppercase tracking-wide';
+        titleClass = 'text-lg md:text-xl font-extrabold text-white mb-1';
+        descricaoClass = 'text-[#cbd5d9] mb-2 text-sm md:text-base leading-relaxed';
+        palestranteClass = 'flex items-center gap-2 mt-2 text-[#D089AA] text-sm font-semibold';
+        if (acontecendoAgora) {
+          acontecendoAgora = `
+            <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#F2BF56]/90 text-[#01435E] text-xs font-bold animate-pulse shadow">
+              <i class="fas fa-bolt"></i> Acontecendo agora
+            </span>
+          `;
+        }
+      }
+
+      // Tag discreta identificando StartUFC (apenas no card deles)
+      const startBadge = isStartUFC
+        ? `<div class="absolute right-4 top-4 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#38D430] text-[#002A3A] text-xs font-bold shadow">StartUFC</div>`
+        : '';
+
+      // Badges para Cosmos e Gatech (mesmo padrão visual do StartUFC, cores específicas)
+      const cosmosBadge = isCosmos
+        ? `<div class="absolute right-4 top-4 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#CD1129] text-[#011343] text-xs font-bold shadow">Cosmos</div>`
+        : '';
+
+      const gatechBadge = isGatech
+        ? `<div class="absolute right-4 top-4 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#F2BF56] text-[#01435E] text-xs font-bold shadow">Gatech</div>`
+        : '';
+
+      // Monta o card SEM imagens (layout compacto e elegante)
       return `
         <div class="mb-8">
-          <div class="relative bg-white border-l-4 border-[#00AFEF] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden ${destaque}">
-            <div class="flex flex-row items-center justify-between p-6 gap-6">
-              <div class="flex-1 flex flex-col gap-2">
-                <div class="flex flex-wrap items-center gap-3 mb-2">
-                  <span class="inline-flex items-center gap-2 bg-[#00AFEF]/10 text-[#00AFEF] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                    <i class="fas fa-clock"></i> ${ev.horario}
-                  </span>
-                  <span class="inline-flex items-center gap-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full uppercase tracking-wide">
-                    <i class="fas fa-map-marker-alt"></i> ${ev.local}
-                  </span>
-                  ${acontecendoAgora}
-                </div>
-                <h4 class="text-lg md:text-xl font-bold text-gray-900 mb-1">${ev.nome}</h4>
-                <p class="text-gray-700 mb-2 text-sm md:text-base leading-relaxed">${ev.descricao}</p>
-                <div class="flex items-center gap-2 mt-2 text-gray-800 text-xs md:text-sm font-semibold">
-                  <i class="fas fa-user text-[#00AFEF]"></i> ${ev.palestrante}
-                </div>
+          <div class="${cardOuter} ${destaque}">
+            ${startBadge}${cosmosBadge}${gatechBadge}
+            <div class="p-6 md:p-7">
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <span class="${horarioBadge}"><i class="fas fa-clock"></i> ${ev.horario}</span>
+                <span class="${localBadge}"><i class="fas fa-map-marker-alt"></i> ${ev.local}</span>
+                ${acontecendoAgora}
+              </div>
+              <h4 class="${titleClass}">${ev.nome}</h4>
+              <p class="${descricaoClass}">${ev.descricao}</p>
+              <div class="${palestranteClass}">
+                <i class="fas fa-user ${isStartUFC ? 'text-[#38D430]' : (isCosmos ? 'text-[#CD1129]' : (isGatech ? 'text-[#D089AA]' : 'text-[#00AFEF]'))}"></i>
+                <span>${ev.palestrante}</span>
               </div>
             </div>
           </div>
@@ -227,6 +308,7 @@ async function loadSchedule() {
 
   // Renderiza o primeiro dia por padrão
   render('day1');
+  render('day2');
 }
 
 document.addEventListener('DOMContentLoaded', loadSchedule);

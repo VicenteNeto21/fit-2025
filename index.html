@@ -89,7 +89,7 @@
       <nav class="flex justify-between items-center" aria-label="Menu principal">
         <!-- Logo -->
         <a href="#inicio" class="flex items-center gap-2" aria-label="Ir para o início">
-          <img src="assets/img/fit-icon.svg" alt="Logotipo do FIT 2025" class="h-10 object-contain" loading="lazy">
+          <img src="assets/img/fit-icon.svg" alt="Logotipo do FIT 2025" class="h-12 object-contain" loading="lazy">
           <span class="sr-only">FIT 2025</span>
         </a>
         <!-- Desktop Menu -->
@@ -147,9 +147,9 @@
              class="bg-[#00AFEF] hover:bg-[#0095cc] text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center text-lg">
             <i class="fas fa-calendar-alt mr-2"></i> Ver Programação
           </a>
-          <a href="#" target="_blank"
+          <a href="https://fitufccrateus.com" target="_blank"
              class="border-2 border-white text-white hover:bg-[#0095cc] hover:text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center text-lg">
-            <i class="fas fa-edit mr-2"></i> Inscreva-se (Em Breve)
+            <i class="fas fa-edit mr-2"></i> Inscreva-se
           </a>
         </div>
         <!-- Countdown -->
@@ -190,10 +190,10 @@
         </div>
         <!-- Botões de dias -->
         <div class="flex justify-center mb-8 space-x-4">
-          <button class="schedule-day px-6 py-2 rounded-lg font-medium bg-[#00AFEF] text-white transition-colors" data-day="day1">
+          <button class="schedule-day px-6 py-2 rounded-lg font-medium bg-gray-100 text-gray-700 hover:bg-[#00AFEF]/10 hover:text-[#00AFEF] transition-colors" data-day="day1">
             Dia 1 (21/10)
           </button>
-          <button class="schedule-day px-6 py-2 rounded-lg font-medium bg-gray-100 text-gray-700 hover:bg-[#00AFEF]/10 hover:text-[#00AFEF] transition-colors" data-day="day2">
+          <button class="schedule-day px-6 py-2 rounded-lg font-medium bg-[#00AFEF] text-white transition-colors" data-day="day2">
             Dia 2 (22/10)
           </button>
         </div>
@@ -218,58 +218,277 @@
         </div>
         <!-- Categoria Diamante -->
         <div class="mb-12">
-          <h3 class="text-2xl font-bold text-[#00AFEF] text-center mb-6">Diamante</h3>
-          <div class="flex flex-wrap justify-center gap-8 items-center max-w-6xl mx-auto">
-            <a href="#" target="_blank"
+          <h3 class="text-2xl font-bold text-[#00AFEF] text-center mb-6 flex items-center justify-center gap-3">
+            <!-- ícone diamante -->
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <path d="M12 2L21 9l-9 13L3 9l9-7z" fill="#00AFEF" opacity="0.95"/>
+              <path d="M12 2v14" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8"/>
+            </svg>
+            Diamante
+          </h3>
+
+          <div class="relative rounded-3xl p-6 bg-gradient-to-br from-[#f8fbff] via-[#e6fefb] to-[#ffffff] border border-[#cfeefe] shadow-xl overflow-hidden">
+            <!-- decoração sutil (diamante translúcido) -->
+            <svg class="pointer-events-none absolute -right-10 -top-8 w-56 h-56 opacity-10 transform rotate-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#00AFEF" stop-opacity="0.6"/>
+                  <stop offset="1" stop-color="#A900FF" stop-opacity="0.6"/>
+                </linearGradient>
+              </defs>
+              <g fill="url(#g1)">
+                <polygon points="50,5 90,35 50,95 10,35"/>
+                <polygon points="50,20 75,38 50,80 25,38" fill="#fff" opacity="0.08"/>
+              </g>
+            </svg>
+
+            <div class="flex flex-wrap justify-center gap-8 items-center max-w-6xl mx-auto relative z-10">
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/alura.webp" alt="Logotipo da Alura, patrocinador diamante" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/sebrae.png" alt="Logotipo do Sebrae, patrocinador diamante" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/galeto-mania.png" alt="Logotipo do Galeto Mania, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/galeto-premium.png" alt="Logotipo da Galeto Premium, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/karatius.png" alt="Logotipo da Pizzaria Karatius, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/planeta-net.jpg" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/havatrends.png" alt="Logotipo da HavaTrends, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
                class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/alura.webp" alt="Logotipo da Alura, patrocinador diamante" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
+              <img src="assets/img/sponsors/crapol-otica.jpeg" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
             </a>
             <a href="#" target="_blank"
                class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/sebrae.png" alt="Logotipo do Sebrae, patrocinador diamante" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
-            </a>
-            <a href="#" target="_blank"
-               class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/galeto-mania.png" alt="Logotipo do Galeto Mania, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
-            </a>
-            <a href="#" target="_blank"
-               class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/galeto-premium.png" alt="Logotipo da Galeto Premium, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              <img src="assets/img/sponsors/cdl.png" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
             </a>
              <a href="#" target="_blank"
                class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/karatius.png" alt="Logotipo da Pizzaria Karatius, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              <img src="assets/img/sponsors/acic.jpg" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
             </a>
             <a href="#" target="_blank"
                class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/planeta-net.jpg" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              <img src="assets/img/sponsors/crateus-prefeitura.png" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
             </a>
             <a href="#" target="_blank"
                class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/havatrends.png" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              <img src="assets/img/sponsors/cosmos.png" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
             </a>
+             <a href="#" target="_blank"
+               class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#00AFEF] border-2 border-transparent sponsor-logo">
+              <img src="assets/img/sponsors/iluminar-eventos.jpg" alt="Logotipo da Planeta Net, patrocinador diamante" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+            </a>
+            </div>
           </div>
         </div>
         <!-- Categoria Prata -->
         <div class="mb-12">
-          <h3 class="text-2xl font-bold text-[#A900FF] text-center mb-6">Prata</h3>
-          <div class="flex flex-wrap justify-center gap-8 items-center max-w-6xl mx-auto">
-            <a href="#" target="_blank"
-               class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#A900FF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/seiva.png" alt="Logotipo da Seiva, patrocinador prata" class="w-full h-full max-h-[90px] object-contain mx-auto" loading="lazy">
-            </a>
-            <a href="#" target="_blank"
-               class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#A900FF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/big-amorim.jpg" alt="Logotipo da Big Amorim, patrocinador prata" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
-            </a>
-            <a href="#" target="_blank"
-               class="bg-white p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#A900FF] border-2 border-transparent sponsor-logo">
-              <img src="assets/img/sponsors/mercantudo-logo.jpg" alt="Logotipo da Mercantudo, patrocinador prata" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
-            </a>
+          <h3 class="text-2xl font-bold text-[#A900FF] text-center mb-6 flex items-center justify-center gap-3">
+            <!-- ícone prata (medalha) -->
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <defs>
+                <linearGradient id="g-silver" x1="0" x2="1">
+                  <stop offset="0" stop-color="#d7dbe0" stop-opacity="1"/>
+                  <stop offset="1" stop-color="#9aa0a8" stop-opacity="1"/>
+                </linearGradient>
+              </defs>
+              <!-- fita -->
+              <path d="M7 2.5L10 7.5L12 6L14 7.5L17 2.5L13 2.5L12 4.5L11 2.5L7 2.5Z" fill="#A900FF" opacity="0.15"/>
+              <!-- medalha -->
+              <circle cx="12" cy="13" r="6" fill="url(#g-silver)" stroke="#fff" stroke-opacity="0.6" stroke-width="0.6"/>
+              <circle cx="12" cy="13" r="3.2" fill="#ffffff" opacity="0.08"/>
+              <path d="M12 10.5L12 15" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.6" stroke-linecap="round"/>
+            </svg>
+            Prata
+          </h3>
+
+          <div class="relative rounded-3xl p-6 bg-gradient-to-br from-[#fbfbfb] via-[#f0f0f0] to-[#ededed] border border-[#d1d5db] shadow-xl overflow-hidden">
+            <!-- decoração sutil (medalha translúcida) -->
+            <svg class="pointer-events-none absolute -left-10 -bottom-8 w-56 h-56 opacity-10 transform -rotate-12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <defs>
+                <linearGradient id="g-silver-bg" x1="0" x2="1">
+                  <stop offset="0" stop-color="#bfc7d0" stop-opacity="0.7"/>
+                  <stop offset="1" stop-color="#9aa0a8" stop-opacity="0.7"/>
+                </linearGradient>
+              </defs>
+              <g fill="url(#g-silver-bg)">
+                <circle cx="50" cy="40" r="28"/>
+                <path d="M50 18 L60 40 L80 44 L62 56 L68 78 L50 64 L32 78 L38 56 L20 44 L40 40 Z" fill="#fff" opacity="0.06"/>
+              </g>
+            </svg>
+
+            <div class="flex flex-wrap justify-center gap-8 items-center max-w-6xl mx-auto relative z-10">
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#A900FF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/seiva.png" alt="Logotipo da Seiva, patrocinador prata" class="w-full h-full max-h-[90px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#A900FF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/big-amorim.jpg" alt="Logotipo da Big Amorim, patrocinador prata" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/90 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#A900FF] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/sponsors/mercantudo-logo.jpg" alt="Logotipo da Mercantudo, patrocinador prata" class="w-full h-full max-h-[100px] object-contain mx-auto" loading="lazy">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apoio de Mídia -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold text-[#10B981] text-center mb-6 flex items-center justify-center gap-3">
+            <!-- ícone mídia (jornal) -->
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <path d="M3 5.75A2.75 2.75 0 015.75 3h11.5A2.75 2.75 0 0120 5.75v12.5A2.75 2.75 0 0117.25 21H5.75A2.75 2.75 0 013 18.25V5.75z" fill="#10B981" opacity="0.12"/>
+              <path d="M6 7h9M6 11h9M6 15h5" stroke="#10B981" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="16.2" y="6.8" width="2.8" height="10.4" rx="0.6" fill="#10B981" opacity="0.18"/>
+            </svg>
+            Apoio de Mídia
+          </h3>
+
+          <div class="relative rounded-3xl p-6 bg-gradient-to-br from-[#ecfdf5] via-[#bbf7d0] to-[#ffffff] border border-[#bbf7d0] shadow-xl overflow-hidden">
+            <!-- decoração sutil (jornal translúcido) -->
+            <svg class="pointer-events-none absolute -right-10 -top-8 w-56 h-56 opacity-10 transform rotate-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <defs>
+                <linearGradient id="g-media-green" x1="0" x2="1">
+                  <stop offset="0" stop-color="#10B981" stop-opacity="0.6"/>
+                  <stop offset="1" stop-color="#34D399" stop-opacity="0.6"/>
+                </linearGradient>
+              </defs>
+              <g fill="url(#g-media-green)">
+                <rect x="18" y="20" width="64" height="48" rx="4"/>
+                <path d="M26 28h36v6H26z" fill="#fff" opacity="0.08"/>
+                <circle cx="30" cy="52" r="6" fill="#fff" opacity="0.06"/>
+              </g>
+            </svg>
+
+            <div class="flex flex-wrap justify-center gap-8 items-center max-w-6xl mx-auto relative z-10">
+              <a href="#" target="_blank"
+                 class="bg-white/95 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#10B981] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/media/tv-zap-news.png" alt="TV Zap News" class="w-full h-full max-h-[90px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="https://www.portalsertoes.com/" target="_blank"
+                 class="bg-white/95 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#10B981] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/media/portal-sertoes.jpg" alt="Portal Sertões" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/95 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#10B981] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/media/radio-educadora.jpg" alt="Portal Sertões" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+              <a href="#" target="_blank"
+                 class="bg-white/95 p-2 rounded-xl shadow-md w-64 h-36 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-[#10B981] border-2 border-transparent sponsor-logo">
+                <img src="assets/img/media/principe-imperial.png" alt="Portal Sertões" class="w-full h-full max-h-[120px] object-contain mx-auto" loading="lazy">
+              </a>
+            </div>
+
+            <!-- (removido texto de agradecimento conforme solicitado) -->
           </div>
         </div>
       </div>
     </section>
+
+<!-- Galeria de Imagens -->
+<section id="galeria" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+  <div class="container mx-auto px-4">
+    <!-- Título -->
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Galeria de Imagens</h2>
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        Explore os momentos marcantes do FIT e mergulhe na energia do maior evento universitário de tecnologia do Sertão de Crateús.
+      </p>
+    </div>
+    <!-- Gallery Layout -->
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Slideshow (Esquerda) -->
+      <div class="lg:w-3/5">
+        <div class="relative rounded-3xl shadow-xl overflow-hidden bg-gray-100 border-4 border-[#A900FF]">
+          <div id="slideshow" class="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh]">
+            <!-- Slides serão inseridos dinamicamente -->
+          </div>
+          <!-- Navegação: Setas -->
+          <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#A900FF]/80 hover:bg-[#A900FF] text-white p-3 rounded-full shadow-md transition-all duration-300 focus:outline-none" aria-label="Slide anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="next-slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#A900FF]/80 hover:bg-[#A900FF] text-white p-3 rounded-full shadow-md transition-all duration-300 focus:outline-none" aria-label="Próximo slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <!-- Indicador de Carregamento/Erro -->
+          <div id="slideshow-loading" class="absolute inset-0 flex items-center justify-center bg-gray-200/70">
+            <i class="fas fa-spinner fa-spin text-5xl text-[#A900FF]"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Image Grid (Direita) -->
+      <div class="lg:w-2/5">
+        <div class="relative rounded-3xl shadow-xl overflow-hidden bg-gray-100 border-4 border-[#A900FF] p-4 h-full flex flex-col justify-between">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="image-grid">
+            <!-- Imagens do grid serão inseridas dinamicamente pelo JS -->
+          </div>
+          <!-- Botão Ver Todas -->
+          <div class="mt-6 text-center">
+            <button id="open-gallery-modal" class="bg-[#A900FF] hover:bg-[#8700cc] text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 w-full">
+              <i class="fas fa-images mr-2"></i> Ver Todas as Imagens
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal de Todas as Imagens -->
+    <div id="gallery-modal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+      <div class="relative w-full max-w-6xl bg-white rounded-2xl p-6 max-h-[90vh] overflow-y-auto">
+        <button id="close-gallery-modal" class="absolute top-4 right-4 text-gray-700 text-3xl focus:outline-none hover:text-[#A900FF] transition-colors" aria-label="Fechar modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Todas as Imagens do FIT</h3>
+        <div id="modal-image-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Imagens do modal serão inseridas dinamicamente pelo JS -->
+        </div>
+        <!-- Paginação -->
+        <div class="flex justify-between items-center mt-6">
+          <button id="prev-page" class="bg-[#A900FF] hover:bg-[#8700cc] text-white px-4 py-2 rounded-lg font-semibold disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
+            <i class="fas fa-chevron-left mr-2"></i> Anterior
+          </button>
+          <span id="page-info" class="text-gray-700 font-medium"></span>
+          <button id="next-page" class="bg-[#A900FF] hover:bg-[#8700cc] text-white px-4 py-2 rounded-lg font-semibold disabled:bg-gray-400 disabled:cursor-not-allowed">
+            Próximo <i class="fas fa-chevron-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+      <div class="relative max-w-5xl w-full">
+        <img id="lightbox-image" src="" alt="" class="w-full h-auto max-h-[85vh] object-contain rounded-xl shadow-2xl">
+        <p id="lightbox-caption" class="text-white text-center mt-4 text-lg font-medium"></p>
+        <button class="absolute top-4 right-4 text-white bg-gray-800/60 hover:bg-gray-700/80 w-12 h-12 rounded-full flex items-center justify-center transition-colors" onclick="closeLightbox()" aria-label="Fechar lightbox">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="flex justify-center mt-4">
+          <button id="download-lightbox-btn" title="Baixar Imagem" class="bg-[#A900FF] hover:bg-[#8700cc] text-white w-14 h-14 rounded-full font-semibold shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+            <i class="fas fa-download text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
 
     <!-- Sobre o Evento -->
     <section id="evento" class="py-16 bg-white">
@@ -280,87 +499,55 @@
         <div class="flex flex-col lg:flex-row gap-6 items-stretch">
           <!-- Coluna Esquerda: Texto e Edições -->
           <div class="lg:w-2/3">
-            <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="bg-white rounded-xl shadow-lg p-8 h-full">
               <p class="text-gray-700 text-lg leading-relaxed mb-6">
                 O <b>Fórum de Inovação e Tecnologia (FIT)</b> do Campus da UFC em Crateús, maior evento universitário de tecnologia do Sertão de Crateús, traz uma programação de palestras, workshops e amostras tecnológicas que lançam um olhar em toda essa revolução.
               </p>
               <p class="text-gray-700 text-lg leading-relaxed mb-6">
                 Em sua <b>12ª edição</b>, o FIT 2025 tem como tema "Internet das Coisas e suas Aplicações", explorando como a IoT está transformando diversos setores, desde a indústria até o cotidiano das pessoas. O evento visa promover a inovação, o conhecimento e o networking entre estudantes, profissionais e entusiastas de tecnologia.
               </p>
-              <h3 class="text-2xl font-semibold text-gray-900 mb-6">Edições Anteriores</h3>
+              <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-3">Edições Anteriores</h3>
               <div class="space-y-4">
                 <!-- Edições anteriores (links mantidos) -->
                 <!-- ...mesmo conteúdo já existente... -->
-                <a href="https://fit.crateus.ufc.br/ano/2024" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2024 - Segurança em redes em um mundo conectado</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2024" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2024 - Segurança em Redes</h4>
                 </a>
-                <a href="https://fit.crateus.ufc.br/ano/2023" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2023 - Otimização além das Fronteiras</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2023" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2023 - Otimização</h4>
                 </a>
-                <a href="#" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2022 - Era dos Dados</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2022" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2022 - Era dos Dados</h4>
                 </a>
-                <a href="https://fit.crateus.ufc.br/ano/2021" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2021 - Desafios de Empreender</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2021" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2021 - Empreendedorismo</h4>
                 </a>
-                <a href="https://fit.crateus.ufc.br/ano/2020" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2020 - CLOUD COMPUTING</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2020" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2020 - Cloud Computing</h4>
                 </a>
-                <a href="https://fit.crateus.ufc.br/ano/2019" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2019 - Educação e Negocios na era da Inteligência Artificial</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2019" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2019 - Inteligência Artificial</h4>
                 </a>
-                <a href="https://fit.crateus.ufc.br/ano/2018" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2018 - Eu S2 Inovação</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2018" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2018 - Eu amo Inovação</h4>
                 </a>
-                <a href="https://fit.crateus.ufc.br/ano/2017" target="_blank"
-                  class="block bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 shadow-sm hover:shadow-md hover:bg-green-200 transition-all flex items-center">
-                  <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">FIT 2017 - 4ª edição do FIT</h4>
-                    <p class="text-primary-600 hover:text-primary-700 hover:no-underline text-sm font-medium">Acessar Site</p>
-                  </div>
+                <a href="https://fit.crateus.ufc.br/ano/2017" target="_blank" class="block bg-green-50/50 hover:bg-green-100/70 rounded-lg p-3 transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
+                  <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                  <h4 class="font-semibold text-gray-800 text-base">FIT 2017 - 4ª Edição</h4>
                 </a>
               </div>
             </div>
           </div>
           <!-- Coluna Direita: Logo do Evento 2025 -->
           <div class="lg:w-1/3 flex items-stretch">
-            <div class="bg-primary-600 rounded-lg p-4 shadow-lg flex items-center justify-center">
+            <div class="bg-white rounded-xl p-6 shadow-lg flex items-center justify-center w-full">
               <img src="assets/img/fit-banner.png" alt="Banner do FIT 2025" class="max-h-full object-contain" loading="lazy">
             </div>
           </div>
@@ -457,6 +644,400 @@
         });
       }
     });
+
+
   </script>
+
+  <script>
+// =======================
+// Galeria de Imagens
+// =====================
+
+// Variáveis globais para o modal
+const IMAGES_PER_PAGE_MODAL = 12;
+let currentPageModal = 1;
+let totalModalPages = 1;
+
+// ATENÇÃO: A chave da API está exposta. Para um ambiente de produção, é crucial protegê-la usando um backend ou funções serverless.
+const DRIVE_API_KEY = 'AIzaSyDRB-744Y0SZWtgRaNOS5pDHcluHN2oUOs';
+const FOLDER_IDS = ['1VudydYt2cORXqndTJnUMWNs0PxuyL4v6', '1PCpzyX2hNwVK6As9LokLb5_-sRZVEc3N', '1z9GgrLtmK-Y5pJr_a0QiYpwfBBFhoeRJ'];
+let slideshowImages = [];
+
+// Fetch images from Google Drive with better error handling
+async function fetchDriveImages() {
+    const loadingIndicator = document.getElementById('slideshow-loading');
+    
+    console.log('Iniciando busca de imagens das pastas:', FOLDER_IDS);
+    
+    try {
+        const fetchPromises = FOLDER_IDS.map(folderId => {
+            const query = `'${folderId}' in parents and (mimeType='image/jpeg' or mimeType='image/jpg' or mimeType='image/png' or mimeType='image/gif')`;
+            const url = `https://www.googleapis.com/drive/v3/files?key=${DRIVE_API_KEY}&q=${encodeURIComponent(query)}&orderBy=createdTime%20desc&fields=files(id,name,mimeType,webContentLink,thumbnailLink)&pageSize=200`;
+            return fetch(url);
+        });
+
+        const responses = await Promise.all(fetchPromises);
+
+        let allFiles = [];
+        for (const response of responses) {
+            if (!response.ok) {
+                console.error(`Erro HTTP em uma das pastas: ${response.status} - ${response.statusText}`);
+                continue; // Pula para a próxima pasta em caso de erro
+            }
+            const data = await response.json();
+            if (data.files) {
+                allFiles = allFiles.concat(data.files);
+            }
+        }
+        
+        console.log('Total de arquivos encontrados:', allFiles.length);
+
+        if (allFiles.length === 0) {
+            throw new Error('Nenhuma imagem encontrada na pasta especificada');
+        }
+        
+        // Mapear os arquivos para URLs de imagem CORRETAS
+        slideshowImages = allFiles.map(file => ({
+            src: `https://lh3.googleusercontent.com/d/${file.id}=s1600`, // URL direta do Google com maior qualidade
+            alt: file.name.replace(/\.[^/.]+$/, '') // Remove a extensão do nome
+        }));
+        
+        // Randomizar a ordem das imagens
+        slideshowImages.sort(() => Math.random() - 0.5);
+        
+        console.log('Imagens processadas e randomizadas:', slideshowImages);
+        
+        // Testar o carregamento das imagens
+        await testImageLoading();
+        
+    } catch (error) {
+        console.error('Erro detalhado:', error);
+        useFallbackImages();
+    }
+}
+
+// Função para testar se as imagens carregam
+async function testImageLoading() {
+    console.log('Testando carregamento das imagens...');
+    
+    const loadingPromises = slideshowImages.map((img, index) => {
+        return new Promise((resolve) => {
+            const testImage = new Image();
+            testImage.onload = () => {
+                console.log(`✅ Imagem ${index} carregada: ${img.src}`);
+                resolve(true);
+            };
+            testImage.onerror = () => {
+                console.log(`❌ Imagem ${index} falhou: ${img.src}`);
+                // Tentar URL alternativa
+                img.src = `https://drive.google.com/thumbnail?id=${img.src.split('/d/')[1]?.split('=')[0] || img.src}`;
+                resolve(false);
+            };
+            testImage.src = img.src;
+        });
+    });
+    
+    const results = await Promise.all(loadingPromises);
+    const successfulLoads = results.filter(result => result).length;
+    
+    console.log(`Carregamento: ${successfulLoads}/${slideshowImages.length} imagens carregadas`);
+    
+    if (successfulLoads === 0) {
+        throw new Error('Nenhuma imagem pôde ser carregada');
+    }
+    
+    // Inicializar a galeria
+    initSlideshow();
+    initImageGrid(); // This will also set up the "Ver Todas as Imagens" button
+    
+    // Esconder loading
+    if (document.getElementById('slideshow-loading')) document.getElementById('slideshow-loading').classList.add('hidden');
+}
+
+function useFallbackImages() {
+    console.log('Usando imagens de fallback...');
+    
+    // URLs diretas do Unsplash que funcionam
+    slideshowImages = [
+        {
+            src: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop",
+            alt: "Tecnologia e Inovação"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&auto=format&fit=crop", 
+            alt: "Workshop de Programação"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&auto=format&fit=crop",
+            alt: "Comunidade Tech"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&auto=format&fit=crop",
+            alt: "Desenvolvimento de Software"
+        }
+    ];
+    
+    initSlideshow();
+    initImageGrid();
+    if (document.getElementById('slideshow-loading')) document.getElementById('slideshow-loading').classList.add('hidden');
+}
+
+// Initialize slideshow
+function initSlideshow() {
+    if (slideshowImages.length === 0) {
+        document.getElementById('slideshow-loading').innerHTML = '<p class="text-red-600 font-semibold">Nenhuma imagem disponível</p>';
+        return;
+    }
+    
+    const slideshow = document.getElementById('slideshow');
+    const dotsContainer = slideshow.parentElement.querySelector('.flex.justify-center');
+    let currentIndex = 0;
+
+    // Clear existing content
+    slideshow.innerHTML = '';
+    if (dotsContainer) dotsContainer.innerHTML = '';
+
+    // Create slides and thumbnails
+    slideshowImages.forEach((img, index) => {
+        const slide = document.createElement('div');
+        slide.className = `absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`;
+        slide.innerHTML = `
+          <img src="${img.src}" alt="${img.alt}" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop'">
+          <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <button class="text-white bg-[#A900FF] hover:bg-[#8700cc] px-4 py-2 rounded-lg font-semibold" onclick="openLightbox('${img.src}', '${img.alt}')">
+              <i class="fas fa-search-plus mr-2"></i> Ampliar
+            </button>
+          </div>
+        `;
+        slideshow.appendChild(slide);
+    });
+
+    // Event listeners for arrows
+    const prevBtn = document.getElementById('prev-slide');
+    const nextBtn = document.getElementById('next-slide');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slideshowImages.length) % slideshowImages.length;
+            updateSlides();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slideshowImages.length;
+            updateSlides();
+        });
+    }
+
+    // Update slides function
+    function updateSlides() {
+        const slides = slideshow.children;
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.toggle('opacity-100', i === currentIndex);
+            slides[i].classList.toggle('opacity-0', i !== currentIndex);
+        }
+    }
+
+    // Auto-advance every 5 seconds
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slideshowImages.length;
+        updateSlides();
+    }, 5000);
+}
+
+// Initialize image grid (right side, limited to 4 images)
+function initImageGrid() { // This function now also sets up the modal button
+    const grid = document.getElementById('image-grid');
+    const gridImages = slideshowImages.slice(0, 4);
+    
+    if (!grid) {
+        console.error('Elemento image-grid não encontrado');
+        return;
+    }
+    
+    grid.innerHTML = '';
+    
+    if (gridImages.length === 0) {
+        grid.innerHTML = '<p class="text-gray-600 col-span-2 text-center">Nenhuma imagem disponível.</p>';
+        return;
+    }
+    
+    gridImages.forEach(img => {
+        const gridItem = document.createElement('div');
+        gridItem.className = 'relative group overflow-hidden rounded-lg shadow-md';
+        gridItem.innerHTML = ` 
+          <img src="${img.src}" alt="${img.alt}" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&auto=format&fit=crop'">
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button class="text-white bg-[#A900FF] hover:bg-[#8700cc] px-4 py-2 rounded-lg font-semibold" onclick="openLightbox('${img.src}', '${img.alt}')">
+              <i class="fas fa-search-plus mr-2"></i> Ampliar
+            </button>
+          </div>
+        `;
+        grid.appendChild(gridItem);
+    });
+}
+// =======================
+// Lightbox functions (for individual image zoom)
+// =====================
+function openLightbox(src, caption) {
+    const lightbox = document.getElementById('lightbox');    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxCaption = document.getElementById('lightbox-caption');    const downloadBtn = document.getElementById('download-lightbox-btn');
+    if (lightbox && lightboxImage && lightboxCaption && downloadBtn) {
+        lightboxImage.src = src;
+        lightboxImage.alt = caption;
+        lightboxCaption.textContent = caption;
+        downloadBtn.onclick = () => downloadImage(src, caption.replace(/[^a-zA-Z0-9]/g, '_') + '.jpg');
+        lightbox.classList.remove('hidden');
+    }
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.classList.add('hidden');
+    }
+}
+
+// Function to force download an image
+function downloadImage(url, filename) {
+    fetch(url, { cache: 'no-store' }) // Usar no-store para evitar problemas com cache
+        .then(response => response.blob())
+        .then(blob => {
+            const blobUrl = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = blobUrl;
+            a.download = filename || 'fit-2025-imagem.jpg';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(blobUrl);
+            a.remove();
+        })
+        .catch(() => alert('Não foi possível baixar a imagem. Verifique sua conexão ou tente novamente.'));
+}
+
+// =======================
+// Full Gallery Modal functions (for "Ver Todas as Imagens")
+// =====================
+
+// Function to open the full gallery modal
+function openGalleryModal() {
+    const galleryModal = document.getElementById('gallery-modal');
+    if (galleryModal) {
+        galleryModal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden'); // Prevent scrolling body
+        currentPageModal = 1; // Reset to first page when opening
+        renderModalImages();
+    }
+}
+
+// Function to close the full gallery modal
+function closeGalleryModal() {
+    const galleryModal = document.getElementById('gallery-modal');
+    if (galleryModal) {
+        galleryModal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden'); // Re-enable scrolling body
+    }
+}
+
+// Function to render images in the modal grid
+function renderModalImages() {
+    const modalImageGrid = document.getElementById('modal-image-grid');
+    const totalImages = slideshowImages.length;
+    totalModalPages = Math.ceil(totalImages / IMAGES_PER_PAGE_MODAL);
+
+    if (!modalImageGrid) {
+        console.error('Elemento modal-image-grid não encontrado');
+        return;
+    }
+
+    modalImageGrid.innerHTML = ''; // Clear previous images
+
+    const startIndex = (currentPageModal - 1) * IMAGES_PER_PAGE_MODAL;
+    const endIndex = Math.min(startIndex + IMAGES_PER_PAGE_MODAL, totalImages);
+    const imagesToDisplay = slideshowImages.slice(startIndex, endIndex);
+
+    if (imagesToDisplay.length === 0) {
+        modalImageGrid.innerHTML = '<p class="text-gray-600 col-span-full text-center">Nenhuma imagem disponível.</p>';
+        return;
+    }
+
+    imagesToDisplay.forEach(img => {
+        const gridItem = document.createElement('div');
+        gridItem.className = 'relative group overflow-hidden rounded-lg shadow-md cursor-pointer';
+        gridItem.innerHTML = `
+            <img src="${img.src}" alt="${img.alt}" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a0b252726f?w=400&auto=format&fit=crop'">
+            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
+                <button title="Ampliar Imagem" class="text-white bg-[#A900FF]/80 hover:bg-[#A900FF] w-12 h-12 rounded-full font-semibold flex items-center justify-center" onclick="openLightbox('${img.src}', '${img.alt}')">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+                <button title="Baixar Imagem" class="text-white bg-gray-600/80 hover:bg-gray-500 w-12 h-12 rounded-full font-semibold flex items-center justify-center" onclick="downloadImage('${img.src}', '${img.alt.replace(/[^a-zA-Z0-9]/g, '_') + '.jpg'}')">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        `;
+        modalImageGrid.appendChild(gridItem);
+    });
+
+    updatePaginationControls();
+}
+
+// Function to update pagination buttons and info
+function updatePaginationControls() {
+    const prevPageBtn = document.getElementById('prev-page');
+    const nextPageBtn = document.getElementById('next-page');
+    const pageInfoSpan = document.getElementById('page-info');
+
+    if (prevPageBtn) prevPageBtn.disabled = currentPageModal === 1;
+    if (nextPageBtn) nextPageBtn.disabled = currentPageModal === totalModalPages;
+    if (pageInfoSpan) pageInfoSpan.textContent = `Página ${currentPageModal} de ${totalModalPages}`;
+}
+
+// Close lightbox on Esc key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        if (!document.getElementById('lightbox').classList.contains('hidden')) {
+            closeLightbox();
+        } else if (!document.getElementById('gallery-modal').classList.contains('hidden')) {
+            closeGalleryModal();
+        }
+    }
+});
+
+// Fetch images on page load
+// Event listeners for modal and pagination
+document.addEventListener('DOMContentLoaded', () => {
+    fetchDriveImages(); // Start fetching images
+
+    const openGalleryModalBtn = document.getElementById('open-gallery-modal');
+    if (openGalleryModalBtn) {
+        openGalleryModalBtn.onclick = openGalleryModal;
+    }
+
+    const closeGalleryModalBtn = document.getElementById('close-gallery-modal');
+    if (closeGalleryModalBtn) {
+        closeGalleryModalBtn.addEventListener('click', closeGalleryModal);
+    }
+
+    const prevPageBtn = document.getElementById('prev-page');
+    const nextPageBtn = document.getElementById('next-page');
+
+    if (prevPageBtn) {
+        prevPageBtn.addEventListener('click', () => {
+            if (currentPageModal > 1) {
+                currentPageModal--;
+                renderModalImages();
+            }
+        });
+    }
+    if (nextPageBtn) {
+        nextPageBtn.addEventListener('click', () => {
+            if (currentPageModal < totalModalPages) {
+                currentPageModal++;
+                renderModalImages();
+            }
+        });
+    }
+});
+  </script> 
 </body>
 </html>

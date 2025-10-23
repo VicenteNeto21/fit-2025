@@ -9,9 +9,29 @@
     "foto_evento": "assets/img/schedule/abertura.png",
     "descricao": "Recepção dos participantes, entrega de crachás e encaminhamento para as atividades do dia."
   },
+   {
+    "nome": "Maratona de Programação",
+    "horario": "08:00 - 10:00",
+    "local": "Laboratório 03",
+    "palestrante": "Comissão Organizadora",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "O enigma FIT 2025 é uma atividade interativa onde os participantes resolvem desafios tecnológicos para ganhar uma premiação."
+  },
   {
-    "nome": "Abertura Oficial",
-    "horario": "08:30 - 09:00",
+    "nome": "Amostra de Startups",
+    "horario": "09:00 - 16:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Comissão Organizadora",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Espaco para conhecer mais sobre as startups que estão participando do FIT 2025."
+  },
+  {
+    "nome": "Abertura Oficial / Banda de Música Crateús",
+    "horario": "09:30 - 10:30",
     "local": "Patio do Bloco Didático",
     "palestrante": "Comissão Organizadora",
     "data": "2025-10-21",
@@ -30,8 +50,91 @@
     "descricao": "O enigma FIT 2025 é uma atividade interativa onde os participantes resolvem desafios tecnológicos para ganhar prêmios."
   },
   {
+    "nome": "Apresentação Teatral - PROGEP UFC",
+    "horario": "11:30 - 13:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Equipe de Enigma",
+    "data": "2025-10-21",
+    "descricao": "A progep ufc apresenta uma peça teatral com a participação de alunos da Universidade Federal."
+  },
+  {
     "nome": "Arena FIT Games",
     "horario": "11:30 - 13:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Equipe de Jogos",
+    "data": "2025-10-21",
+    "descricao": "Competições de jogos eletrônicos e atividades lúdicas para promover a integração e diversão entre os participantes."
+  },
+  {
+    "nome": "Campeonato de Karaokê - FIT 2025",
+    "horario": "11:30 - 13:00",
+    "local": "Auditório",
+    "palestrante": "Kaleb/Fernanda/Gabriela",
+    "data": "2025-10-21",
+    "descricao": "Mostre seu talento no palco do FIT 2025! Participe do nosso campeonato de karaokê e concorra a prêmios incríveis."
+  },
+  {
+    "nome": "Momento Gatech",
+    "horario": "13:00 - 15:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Gatech",
+    "data": "2025-10-21",
+    "descricao": "O gatech tem intuito de trazer para mulher para o mercado de tecnologia, mostrando a importância e o impacto que elas podem causar nesse meio."
+  },
+  {
+    "nome": "Avaliação de desempenho em sistemas de Visão Computacional",
+    "horario": "13:00 - 15:00",
+    "local": "Auditório",
+    "palestrante": "Diego Emmanuel",
+    "data": "2025-10-21",
+    "descricao": "Avaliacao de desempenho em sistemas de Visão Computacional”, com Diego Emmanuel de Sousa Silva. Uma análise detalhada sobre métricas e metodologias para avaliar a eficácia de sistemas de visão computacional em diversas aplicações."
+  },
+  {
+    "nome": "CoffeeBreak - Cosmos Supermercados",
+    "horario": "15:00 - 15:30",
+    "local": "Auditório",
+    "palestrante": "Cosmos Supermercados",
+    "data": "2025-10-21",
+    "descricao": "Pausa para um coffee break oferecido pelo Cosmos Supermercados, proporcionando um momento de networking e descontração entre os participantes."
+  },
+  {
+    "nome": "Amostra de robótica",
+    "horario": "15:30 - 17:30",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Dagoberto e Equipe",
+    "data": "2025-10-21",
+    "descricao": "A amostra de robótica apresenta projetos inovadores desenvolvidos por estudantes, destacando avanços tecnológicos e aplicações práticas na área de robótica."
+  },
+  {
+    "nome": "Reunião do comitê gestor do Ecossistema Local de Inovação Poty Valley",
+    "horario": "15:30 - 17:30",
+    "local": "Auditório",
+    "palestrante": "Sebrae e Convidados",
+    "data": "2025-10-21",
+    "descricao": "O encontro regional do Poty Valley visa promover a integração entre startups, investidores e empreendedores da região, fomentando o ecossistema de inovação local."
+  },
+  {
+    "nome": "MQTT na Prática: Comunicação Inteligente para Dispositivos Conectados",
+    "horario": "15:30 - 17:30",
+    "local": "Laboratório 03",
+    "palestrante": "Pablo Kauan",
+    "data": "2025-10-21",
+    "descricao": "Aprenda, em apenas duas horas, a usar o protocolo MQTT, essencial para a Internet das Coisas e automação. Com o graduando Pablo Kauan Martins Timbó, você vai conhecer a arquitetura publish/subscribe, criar clientes MQTT com Python e aplicar boas práticas de segurança e autenticação."
+  },
+
+  {
+    "nome": "VANETs na Prática: Simulação de Tráfego e Redes com SUMO e NS-3",
+    "horario": "15:30 - 17:30",
+    "local": "Laboratório 02",
+    "palestrante": "Ezequiel Rodrigues Possidone // Vicente Fernandes Duarte Neto",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Neste minicurso, os graduandos Ezequiel Rodrigues Possidone e Vicente Fernandes Duarte Neto vão apresentar uma introdução prática às Redes Veiculares (VANETs), mostrando como simular o movimento de veículos em mapas reais e como essas informações são utilizadas para projetar a comunicação entre eles."
+  },
+  {
+    "nome": "Arena FIT Games",
+    "horario": "17:00 - 18:00",
     "local": "Patio do Bloco Didático",
     "palestrante": "Equipe de Jogos",
     "data": "2025-10-21",
@@ -40,61 +143,208 @@
     "descricao": "Competições de jogos eletrônicos e atividades lúdicas para promover a integração e diversão entre os participantes."
   },
   {
-    "nome": "Campeonato de Karaokê - FIT 2025",
-    "horario": "11:30 - 13:00",
-    "local": "Auditório Principal",
-    "palestrante": "Kaleb/Fernanda/Gabriela",
+    "nome": "Programando ESP32 para Tecnologias IoT",
+    "horario": "18:00 - 21:30",
+    "local": "Laboratório 02",
+    "palestrante": "Diogo Bandeira Assunção",
     "data": "2025-10-21",
-    "foto_palestrante": "assets/img/schedule/karaoke.png",
-    "foto_evento": "assets/img/schedule/karaoke.png",
-    "descricao": "Mostre seu talento no palco do FIT 2025! Participe do nosso campeonato de karaokê e concorra a prêmios incríveis."
+    "descricao": "Uso de ES32 para desenvolvimento de soluções IoT."
+  },
+  {
+    "nome": "Palestra sobre o Hackathon",
+    "horario": "19:30 - 21:40",
+    "local": "Auditório",
+    "palestrante": "Prof. Welligton // Gisele // Larissa // Livia",
+    "data": "2025-10-21",
+    "foto_palestrante": "assets/img/schedule/abertura.png",
+    "foto_evento": "assets/img/schedule/abertura.png",
+    "descricao": "Palestra sobre o Hackathon, explicando as regras, objetivos e expectativas para os participantes."
+  },
+  {
+    "nome": "Inicio do Hackathon",
+    "horario": "20:00 - 23:59",
+    "local": "Salas de Aula e Laboratórios",
+    "palestrante": "Prof. Welligton // Gisele // Larissa // Livia",
+    "data": "2025-10-21",
+    "descricao": "Inicio das atividades do Hackathon, onde os participantes terão a oportunidade de desenvolver soluções inovadoras para desafios propostos, promovendo a criatividade e o trabalho em equipe."
   },
 
 
 
-
-
-
-
-
+{
+    "nome": "Segunda rodada do Hackathon",
+    "horario": "00:00 - 11:30",
+    "local": "Salas de Aula e Laboratórios",
+    "palestrante": "Prof. Welligton // Gisele // Larissa // Livia",
+    "data": "2025-10-22",
+    "descricao": "Continuidade das atividades do Hackathon, onde os participantes terão a oportunidade de desenvolver soluções inovadoras para desafios propostos, promovendo a criatividade e o trabalho em equipe."
+  },
   {
     "nome": "Credeciamento",
     "horario": "07:30 - 21:30",
     "local": "Hall de Entrada da Universidade",
     "palestrante": "Equipe de Recepção",
     "data": "2025-10-22",
-    "foto_palestrante": "assets/img/schedule/abertura.png",
-    "foto_evento": "assets/img/schedule/abertura.png",
     "descricao": "Recepção dos participantes, entrega de crachás e encaminhamento para as atividades do dia."
   },
   {
+    "nome": "Amostra de Startups",
+    "horario": "09:00 - 16:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Frank // Fernanda Vasconcelos",
+    "data": "2025-10-22",
+    "descricao": "Momento para conhecer mais sobre as startups."
+  },
+  {
+    "nome": "Introdução a Visão Computacional com Pytorch (Minicurso)",
+    "horario": "09:00 - 11:00",
+    "local": "Laboratório 02",
+    "palestrante": "Luciano e Pedro Herinque",
+    "data": "2025-10-22",
+    "descricao": "Neste minicurso, você vai mergulhar na implementação de uma rede neural clássica — a U-Net — construindo cada linha de código dentro da estrutura do PyTorch."
+  },
+  {
+    "nome": "Mesa Redonda Start Day",
+    "horario": "09:00 - 11:00",
+    "local": "Auditório",
+    "palestrante": "STARTUFC",
+    "data": "2025-10-22",
+    "descricao": "RODA DE CONVERSA – StartDay imerso no FIT 25 com a presença de Marx Sena, Paulo Vinícius, Josyelle, Gabriel Mossoró e Felipe Torres. Venha conhecer mais sobre o ecossistema de inovação da UFC e como a StartUFC pode impulsionar sua jornada empreendedora!"
+  },
+  {
+    "nome": "Apresentação dos Projetos do Hackathon",
+    "horario": "11:00 - 12:00",
+    "local": "Auditório",
+    "palestrante": "Prof. Welligton // Gisele // Larissa // Livia",
+    "data": "2025-10-22",
+    "descricao": "Apresentação dos projetos desenvolvidos durante o Hackathon, onde os participantes terão a oportunidade de mostrar suas soluções inovadoras e discutir os desafios enfrentados durante o processo."
+  },
+  {
     "nome": "Arena FIT Games",
-    "horario": "11:30 - 13:00",
+    "horario": "11:00 - 13:00",
     "local": "Patio do Bloco Didático",
     "palestrante": "Equipe de Jogos",
     "data": "2025-10-22",
-    "foto_palestrante": "assets/img/schedule/jogos.png",
-    "foto_evento": "assets/img/schedule/jogos.png",
     "descricao": "Competições de jogos eletrônicos e atividades lúdicas para promover a integração e diversão entre os participantes."
   },
   {
     "nome": "Campeonato de Karaokê - FIT 2025",
-    "horario": "11:30 - 13:00",
+    "horario": "11:00 - 13:00",
     "local": "Auditório",
     "palestrante": "Kaleb/Fernanda/Gabriela",
     "data": "2025-10-22",
-    "foto_palestrante": "assets/img/schedule/karaoke.png",
-    "foto_evento": "assets/img/schedule/karaoke.png",
     "descricao": "Mostre seu talento no palco do FIT 2025! Participe do nosso campeonato de karaokê e concorra a prêmios incríveis."
   },
   {
     "nome": "IA e Visão Computacional na Agricultura: Revolução Tecnológica do Algoritmo ao Campo",
     "horario": "13:00 - 15:00",
-    "local": "Auditório",
+    "local": "Laboratório 02 - Espaço Alura",
     "palestrante": "Diego Emmanuel",
     "data": "2025-10-22",
-    "foto_palestrante": "assets/img/schedule/abertura.png",
-    "foto_evento": "assets/img/schedule/abertura.png",
     "descricao": "Partindo de uma breve linha do tempo das revoluções industriais, da mecanização à automação inteligente, a palestra objetiva contextualizar a chegada da Agricultura 4.0 e a busca pela Agricultura 5.0. Movida pela IA, essa transição marca a entrada da agricultura na era da tomada de decisão baseada em algoritmos, onde máquinas passam a enxergar, aprender e agir com base em informações visuais e ambientais."
-  }
+  },
+  {
+    "nome": "Conexões dos saberes da cultura digital, inovação tecnológica e participação social na formação para o trabalho em saúde no SUS",
+    "horario": "13:00 - 15:00",
+    "local": "Auditório",
+    "palestrante": "Professor Agostinho",
+    "data": "2025-10-22",
+    "descricao": "com o PET-Saúde Informação e Saúde Digital, sob orientação do Prof. Agostinho"
+  },
+   {
+    "nome": "IoT na Agropecuária: do Sensor ao Produtor",
+    "horario": "13:00 - 15:00",
+    "local": "Laboratório 01",
+    "palestrante": "Renato William",
+    "data": "2025-10-22",
+    "descricao": "IoT na Agropecuária: do Sensor ao Produtor”, com Renato William Rodrigues de Souza. Uma visão aprofundada sobre o futuro da agricultura."
+  },
+  {
+    "nome": "CoffeeBreak - Cosmos Supermercados",
+    "horario": "15:00 - 15:30",
+    "local": "Auditório",
+    "palestrante": "Cosmos Supermercados",
+    "data": "2025-10-22",
+    "descricao": "Pausa para um coffee break oferecido pelo Cosmos Supermercados, proporcionando um momento de networking e descontração entre os participantes."
+  },
+  {
+    "nome": "Do Erro à Inovação: aprendendo com o fracasso",
+    "horario": "15:30 - 17:30",
+    "local": "Auditório",
+    "palestrante": "Elvis Gonçalves (Sebrae)",
+    "data": "2025-10-22",
+    "descricao": "Nesta palestra, Elvis Gonçalves do SEBRAE compartilha histórias inspiradoras de empreendedores que transformaram fracassos em trampolins para o sucesso. Descubra como aprender com os erros pode impulsionar a inovação e fortalecer sua jornada empreendedora."
+  },
+  {
+    "nome": "VANETs na Prática: Simulação de Tráfego e Redes com SUMO e NS-3",
+    "horario": "15:30 - 17:30",
+    "local": "Laboratório 02",
+    "palestrante": "Ezequiel Rodrigues Possidone // Vicente Fernandes Duarte Neto",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Neste minicurso, os graduandos Ezequiel Rodrigues Possidone e Vicente Fernandes Duarte Neto vão apresentar uma introdução prática às Redes Veiculares (VANETs), mostrando como simular o movimento de veículos em mapas reais e como essas informações são utilizadas para projetar a comunicação entre eles."
+  },
+  {
+    "nome": "IoT Descomplicado para o Agro",
+    "horario": "15:30 - 17:30",
+    "local": "Laboratório 03",
+    "palestrante": "Mikael Sales",
+    "data": "2025-10-22",
+    "descricao": "Quer entender como a tecnologia está transformando o campo? Neste minicurso, você vai descobrir como a Internet das Coisas (IoT) pode ser aplicada na agricultura, com foco em sensores, automação e monitoramento inteligente."
+  },
+  {
+    "nome": "Amostra de Robotica",
+    "horario": "15:30 - 17:30",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Dagoberto e Equipe",
+    "data": "2025-10-22",
+    "descricao": "A amostra de robótica apresenta projetos inovadores desenvolvidos por estudantes, destacando avanços tecnológicos e aplicações práticas na área de robótica."
+  },
+    {
+    "nome": "Arena FIT Games",
+    "horario": "17:00 - 18:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Equipe de Jogos",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Competições de jogos eletrônicos para promover a integração e diversão entre os participantes."
+  },
+  {
+    "nome": "Utilização de Ecossistemas IoT para uma Agricultura Verdadeiramente Sustentável",
+    "horario": "18:00 - 20:30",
+    "local": "Auditório",
+    "palestrante": "Helder",
+    "data": "2025-10-22",
+    "descricao": "Você sabia que a Internet das Coisas (IoT) pode revolucionar o modo como produzimos alimentos? Neste minicurso, Diogo Bandeira Assunção vai apresentar, de forma prática, como Sistemas Embarcados e Ecossistemas IoT podem ser aplicados para desenvolver soluções que tornam a agricultura mais inteligente, eficiente e sustentável."
+  },
+  {
+    "nome": "Programando ESP32 para Tecnologias IoT",
+    "horario": "18:00 - 20:30",
+    "local": "Laboratório 02",
+    "palestrante": "Diogo Bandeira Assunção",
+    "data": "2025-10-22",
+    "descricao": "Sem dados"
+  },
+  {
+    "nome": "Premiação das campetições",
+    "horario": "20:30 - 21:00",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Comissão Organizadora",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Momemnto para premiar os vencedores das competições realizadas durante o evento."
+  },
+  {
+    "nome": "Cerimônia de Encerramento",
+    "horario": "20:30 - 21:30",
+    "local": "Patio do Bloco Didático",
+    "palestrante": "Comissão Organizadora",
+    "data": "2025-10-22",
+    "foto_palestrante": "assets/img/schedule/karaoke.png",
+    "foto_evento": "assets/img/schedule/karaoke.png",
+    "descricao": "Passagem de bastão e agradecimentos finais aos participantes e patrocinadores."
+  }  
 ]
