@@ -308,7 +308,6 @@ async function loadSchedule() {
 
   // Renderiza o primeiro dia por padrão
   render('day1');
-  render('day2');
 }
 
 document.addEventListener('DOMContentLoaded', loadSchedule);
